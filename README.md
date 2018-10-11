@@ -1,33 +1,26 @@
-## Issue A Certificate on BlockChain Using BlockCerts(for Mac)
+# Issue A Certificate on BlockChain Using BlockCerts(for Mac)
 
-### Installation
-1. **Python3** 
- 
-  Mac OS X High Sierra comes with Python2.7 by default, but we need Python3 in this project.  
-  Here we use [HomeBrew](https://brew.sh/) to install Python3
-	* **Install homebrew**
-		1. Open Terminal, install Apple's Xcode package first.  
-		 
-			```
-			xcode-select --install
-			```
-			 
-  		1. To install Homebrew, open Terminal and run  
-  		
-  			```
-  			/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  			```  
-  		
-  		2. And then run the following command by adding the following line at the bottom of your ~/.bash_profile file
-  		
-  			```
-  			echo "export PATH=/usr/local/bin:/usr/local/sbin:$PATH" >> ~/.bash_profile	&& source ~/.bash_profile
-  			```  
-  	* **install Python3**
-  		
-  		```
-  		brew install python3
-  		```
+## Installation
+1. **Python3**
+
+  	Mac OS X High Sierra comes with Python2.7 by default, but we need Python3 in this project.
+  	Here we use [HomeBrew](https://brew.sh/) to install Python3
+        **Install homebrew**
+        1. Open Terminal, install Apple's Xcode package first.
+
+                xcode-select --install
+	1. To install Homebrew, open Terminal and run
+
+                /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+                
+	2. And then run the following command by adding the following line at the bottom of your ~/.bash_profile file
+	
+                echo "export PATH=/usr/local/bin:/usr/local/sbin:$PATH" >> ~/.bash_profile      && source ~/.bash_profile
+                  
+	1. install Python3
+
+                brew install python3
+                
   	
 2. **virtualEnv & virtualEnvWrapper**  
 	> virtualenv is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.  
@@ -61,7 +54,7 @@
 	*If you already install gitcore, just git clone the blockcerts repo, otherwise go to the repository and download it*  
 	* Download **issuer-tools** into **~/Projects/blockcerts/** folder and unzip it; next we will work on issuer-tools. 
 
-### Create certificate template and instantiate batch
+## Create certificate template and instantiate batch
 
 
 	workon blockcerts
